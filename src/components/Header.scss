@@ -1,0 +1,22 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid black;
+
+    &.strong {
+        margin: 0 20px 0 0;
+    }
+
+    &.ul {
+        list-style: none;
+        display: flex;
+
+        &.li {
+            margin: 0 15px 0 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
