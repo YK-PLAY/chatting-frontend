@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 import Header from './components/Header';
 import LoginPage from './pages/LoginPage';
+import ChattingPage from './pages/ChattingPage';
 import MainPage from './pages/MainPage';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path = '/' component = {Header}/>
         <Switch>
           <Route path = '/login' component = {LoginPage}/>
+          <Route path = '/chatting' component = {ChattingPage}/>
           <Route path = '/' exact component = {MainPage}/>
           <Route render = {() => <div className = 'error'>Error Page</div>} />
         </Switch>
